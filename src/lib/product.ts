@@ -11,9 +11,8 @@ export const product = {
   shortDescription:
     "A lightweight daily oil that nourishes dry cuticles and helps nails look and feel stronger, smoother, and healthier.",
   images: [
-    "/product/bottle-1.svg",
-    "/product/bottle-2.svg",
-    "/product/bottle-3.svg",
+    "/product/hero-full.jpg",
+    "/product/box-detail.jpg",
   ],
   benefits: [
     {

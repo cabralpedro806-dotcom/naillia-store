@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f6f1ea;
+  --foreground: #241e1a;
+  --brand-cream: #f6f1ea;
+  --brand-card: #fffdfa;
+  --brand-blush: #efe1d9;
+  --brand-rose: #7a3b32;
+  --brand-rose-dark: #5e2b24;
+  --brand-sage: #7c8f6e;
+  --brand-gold: #b08a3e;
+  --brand-ink: #241e1a;
+  --brand-line: #e4dbcd;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-card: var(--brand-card);
+  --color-brand-blush: var(--brand-blush);
+  --color-brand-rose: var(--brand-rose);
+  --color-brand-rose-dark: var(--brand-rose-dark);
+  --color-brand-sage: var(--brand-sage);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-line: var(--brand-line);
+  --font-sans: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Bodoni Moda", Didot, Georgia, "Times New Roman", serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
 }
